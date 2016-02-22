@@ -221,7 +221,6 @@ class GamePlayViewController: UIViewController, UIAlertViewDelegate {
             self.buttonWrongTapped(sender)
             
             self.label.textColor = UIColor.blueColor()
-            
                 }
         }
 }
