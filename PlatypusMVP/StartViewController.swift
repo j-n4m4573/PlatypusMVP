@@ -19,8 +19,6 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
 
             self.challengeImageOutlet.image = challenges?.badge
-            
-            
     }
 
     
