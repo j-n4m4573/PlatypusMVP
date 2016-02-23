@@ -58,7 +58,8 @@
                                     <rect key="frame" x="0.0" y="437" width="400" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="eag-UW-gSL" kind="show" id="HFd-29-T2h"/>
+                                    <action selector="tryLoggin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bPj-5T-YEh"/>
+                                    <segue destination="eag-UW-gSL" kind="show" identifier="LoggedIn" id="HFd-29-T2h"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Xhr-sA-4NU">
@@ -262,6 +263,10 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="171" y="443" width="59" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="createAccount:" destination="2IK-hS-kDs" eventType="touchUpInside" id="j3b-Bd-ZcI"/>
+                                    <segue destination="eag-UW-gSL" kind="show" identifier="NewUserLoggedIn" id="Fqd-iG-quS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -274,7 +279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6hC-Ah-yXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="674"/>
+            <point key="canvasLocation" x="1283" y="621"/>
         </scene>
         <!--Challenges Table View Controller-->
         <scene sceneID="Tik-hI-ihg">
@@ -293,7 +298,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kJe-V1-4Po">
-                                            <rect key="frame" x="15" y="66" width="68.5" height="18"/>
+                                            <rect key="frame" x="15" y="66" width="30" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -349,7 +354,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Gradient-Honeycomb-Background-Vector" translatesAutoresizingMaskIntoConstraints="NO" id="WQu-xh-Fad">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Become a Brew Master: Take the IPA challenge " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-Vz-7B5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Become a Brew Master: Take the IPA challenge " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9W-Vz-7B5">
                                 <rect key="frame" x="36" y="96" width="529" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="Hx9-sA-ndU"/>
@@ -369,7 +374,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUP-D7-vqZ">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUP-D7-vqZ">
                                 <rect key="frame" x="265" y="507" width="71" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="dpR-3P-phz"/>
@@ -389,7 +394,7 @@
                                     <segue destination="nqZ-rH-V6n" kind="show" id="Tzk-Rt-q2R"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfX-54-72f">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfX-54-72f">
                                 <rect key="frame" x="111" y="330" width="435" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="JfT-7k-dJb"/>
@@ -409,7 +414,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjX-dK-OWc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kjX-dK-OWc">
                                 <rect key="frame" x="226" y="187" width="148" height="129"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="284" id="Hgr-7A-F59"/>
@@ -516,7 +521,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barbackground" translatesAutoresizingMaskIntoConstraints="NO" id="4Ld-Oa-Ute">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7q-0N-r8U">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z7q-0N-r8U">
                                 <rect key="frame" x="15" y="493" width="265" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="369" id="k6b-3z-c2L"/>
@@ -536,7 +541,7 @@
                                     <action selector="buttonTapped:" destination="nqZ-rH-V6n" eventType="touchUpInside" id="mRR-OG-ePS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="06m-S5-1Nr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="06m-S5-1Nr">
                                 <rect key="frame" x="15" y="89" width="570" height="356"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="7yE-u7-8yF"/>
@@ -596,7 +601,7 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwJ-1D-ogq">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MwJ-1D-ogq">
                                 <rect key="frame" x="314" y="493" width="266" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="369" id="ZFa-1p-INg"/>
@@ -644,16 +649,16 @@
                                 <exclude reference="8yu-Ux-7M4"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="GR5-IL-dds"/>
+                                <exclude reference="goJ-Zq-Zhl"/>
+                                <exclude reference="zM2-Ms-p8t"/>
+                                <exclude reference="s4b-wv-pfC"/>
                                 <exclude reference="9MX-eK-knk"/>
                                 <exclude reference="H4l-kp-A3q"/>
                                 <exclude reference="gSP-kn-LEn"/>
                                 <exclude reference="w4t-YQ-6bh"/>
-                                <exclude reference="s4b-wv-pfC"/>
                                 <exclude reference="g0k-gf-TmJ"/>
                                 <exclude reference="r6s-eO-TmK"/>
-                                <exclude reference="GR5-IL-dds"/>
-                                <exclude reference="goJ-Zq-Zhl"/>
-                                <exclude reference="zM2-Ms-p8t"/>
                                 <exclude reference="WH6-Hi-YHW"/>
                                 <exclude reference="i0U-4L-ETB"/>
                                 <exclude reference="nmn-g5-aev"/>
@@ -670,16 +675,16 @@
                                 <include reference="8yu-Ux-7M4"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="GR5-IL-dds"/>
+                                <include reference="goJ-Zq-Zhl"/>
+                                <include reference="zM2-Ms-p8t"/>
+                                <include reference="s4b-wv-pfC"/>
                                 <include reference="9MX-eK-knk"/>
                                 <include reference="H4l-kp-A3q"/>
                                 <include reference="gSP-kn-LEn"/>
                                 <include reference="w4t-YQ-6bh"/>
-                                <include reference="s4b-wv-pfC"/>
                                 <include reference="g0k-gf-TmJ"/>
                                 <include reference="r6s-eO-TmK"/>
-                                <include reference="GR5-IL-dds"/>
-                                <include reference="goJ-Zq-Zhl"/>
-                                <include reference="zM2-Ms-p8t"/>
                                 <include reference="WH6-Hi-YHW"/>
                                 <include reference="i0U-4L-ETB"/>
                                 <include reference="nmn-g5-aev"/>
@@ -785,4 +790,7 @@
         <image name="barbackground" width="1280" height="720"/>
         <image name="beer-cheers" width="304" height="233"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Fqd-iG-quS"/>
+    </inferredMetricsTieBreakers>
 </document>
