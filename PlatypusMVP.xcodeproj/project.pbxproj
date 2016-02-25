@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D28A18A1C7BC6120033BB8F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28A1891C7BC6120033BB8F /* Data.swift */; };
 		5D28A18C1C7BC6FF0033BB8F /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28A18B1C7BC6FF0033BB8F /* constants.swift */; };
+		5D28A18E1C7D3BC80033BB8F /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D28A18D1C7D3BC80033BB8F /* Score.swift */; };
 		5D4BCA911C728DBA005EB36E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4BCA901C728DBA005EB36E /* AppDelegate.swift */; };
 		5D4BCA991C728DBA005EB36E /* PlatypusMVP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D4BCA971C728DBA005EB36E /* PlatypusMVP.xcdatamodeld */; };
 		5D4BCA9B1C728DBA005EB36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D4BCA9A1C728DBA005EB36E /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		4881B0F270922B561E402FA9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D28A1891C7BC6120033BB8F /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		5D28A18B1C7BC6FF0033BB8F /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		5D28A18D1C7D3BC80033BB8F /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		5D4BCA8D1C728DB9005EB36E /* PlatypusMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatypusMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4BCA901C728DBA005EB36E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D4BCA981C728DBA005EB36E /* PlatypusMVP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlatypusMVP.xcdatamodel; sourceTree = "<group>"; };
@@ -85,12 +87,13 @@
 				5D28A1891C7BC6120033BB8F /* Data.swift */,
 				5D28A18B1C7BC6FF0033BB8F /* constants.swift */,
 				5D4BCAB81C72A2F2005EB36E /* Challenges.swift */,
+				5D28A18D1C7D3BC80033BB8F /* Score.swift */,
 				5D4BCAA71C728E8C005EB36E /* LoginViewController.swift */,
 				5D4BCAAD1C72926F005EB36E /* CreateAccountViewController.swift */,
 				5D4BCAB21C7293B9005EB36E /* ChallengesTableViewController.swift */,
-				5DB550C01C7534EC009E66F8 /* WinnerViewController.swift */,
 				5D4BCAB41C7293ED005EB36E /* StartViewController.swift */,
 				5D4BCAB61C729403005EB36E /* GamePlayViewController.swift */,
+				5DB550C01C7534EC009E66F8 /* WinnerViewController.swift */,
 				5D4BCAA51C728E50005EB36E /* Main.storyboard */,
 				5D4BCA9A1C728DBA005EB36E /* Assets.xcassets */,
 				5D4BCAB11C729323005EB36E /* Supporting Files */,
@@ -256,6 +259,7 @@
 				5D4BCA991C728DBA005EB36E /* PlatypusMVP.xcdatamodeld in Sources */,
 				5D4BCA911C728DBA005EB36E /* AppDelegate.swift in Sources */,
 				5D4BCAB71C729403005EB36E /* GamePlayViewController.swift in Sources */,
+				5D28A18E1C7D3BC80033BB8F /* Score.swift in Sources */,
 				5D4BCAB31C7293B9005EB36E /* ChallengesTableViewController.swift in Sources */,
 				5D4BCAB91C72A2F2005EB36E /* Challenges.swift in Sources */,
 				5DB550C11C7534EC009E66F8 /* WinnerViewController.swift in Sources */,

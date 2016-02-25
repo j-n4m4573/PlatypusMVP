@@ -19,6 +19,7 @@ class GamePlayViewController: UIViewController, UIAlertViewDelegate {
     var timer = NSTimer()
     var seconds = 30
     var counter: Int = 0
+    var score : Int = 0
     
     let animationDuration: NSTimeInterval = 0.20
     let switchingInterval: NSTimeInterval = 1000
@@ -45,8 +46,6 @@ class GamePlayViewController: UIViewController, UIAlertViewDelegate {
             counter = 0
             self.buttonOne.titleLabel?.text = self.brew[0].name
             self.buttonTwo.titleLabel?.text = self.brew[1].name
-
-        
     }
     
     override func viewDidLoad() {
@@ -111,7 +110,8 @@ class GamePlayViewController: UIViewController, UIAlertViewDelegate {
         var buttons = [self.buttonOne, self.buttonTwo]
        
         counter++
-       
+        score = score + 10
+        
         timer.invalidate()
         setupGame()
         
@@ -191,6 +191,7 @@ class GamePlayViewController: UIViewController, UIAlertViewDelegate {
         self.label.text = "\(counter)/13"
         
         
+    
     }
     
 
@@ -222,14 +223,19 @@ class GamePlayViewController: UIViewController, UIAlertViewDelegate {
             self.label.textColor = UIColor.blueColor()
                 }
         }
-}
-    /*
+    
+    
+
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let destination = segue.destinationViewController as! WinnerViewController
+        
+         destination.score1 = score
+    
     }
-    */
+}
+
 

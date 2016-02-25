@@ -15,7 +15,7 @@ class Data {
     
     private var _BASE_REF = Firebase(url: "\(BASE_URL)")
     private var _USER_REF = Firebase(url: "\(BASE_URL)/users")
-    private var _MEDIA_REF = Firebase(url: "\(BASE_URL)/media")
+    private var _SCORE_REF = Firebase(url: "\(BASE_URL)/score")
     
     var BASE_REF: Firebase {
         return _BASE_REF
@@ -33,8 +33,8 @@ class Data {
         return currentUser!
     }
     
-    var MEDIA_REF: Firebase {
-        return _MEDIA_REF
+    var SCORE_REF: Firebase {
+        return _SCORE_REF
     }
     
     func createNewAccount(uid: String, user: Dictionary<String, String>) {
@@ -42,6 +42,11 @@ class Data {
         // A User is born.
         USER_REF.childByAppendingPath(uid).setValue(user)
 }
-
-
+    func createNewScore(score: Dictionary<String, AnyObject>)
+    {
+        let firebaseNewScore = SCORE_REF.childByAutoId()
+        
+        firebaseNewScore.setValue(score)
+        
+    }
 }

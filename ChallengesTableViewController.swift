@@ -32,8 +32,6 @@ class ChallengesTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return challenges.count
     }
-
-   
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("challengeCell", forIndexPath: indexPath)
         let challenge = self.challenges[indexPath.row]
@@ -42,8 +40,6 @@ class ChallengesTableViewController: UITableViewController {
 //        let cellImg : UIImageView = UIImageView(frame: CGRectMake(5, 5, 120, 120))
 //        cellImg.image = challenge.image
 //        cell.addSubview(cellImg)
-
-        
         
         return cell
     }
